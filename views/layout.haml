@@ -3,10 +3,19 @@
   %meta{charset: "utf-8"}
 
   %link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"}
-  %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"}
-%body
+  %script{src: "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js", charset: "utf-8"}
+  %script{src: "/js/d3.js"}
 
-  %div.row
-    %div.col-md-4 Hello
-    %div.col-md-4 Hello
-    %div.col-md-4 Hello
+  / Bootstrap JS requires jQuery, can include both if needed
+  / %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"}
+
+%body{style: "background-color: #E4E5F5;"}
+
+  %div{ style: "margin-right: 10%; margin-left: 10%; height: 100%; background-color: white; padding: 20px;"}
+    %div.row
+      %div.col-md-4 Hello
+      %div.col-md-4 Hello
+      %div.col-md-4 Hello
+
+    %hr
+    = yield
