@@ -11,6 +11,8 @@ gem 'sinatra-flash'
 group :test, :development do
   gem 'capybara'
   gem 'dotenv'
-  gem 'pry'
+  gem 'pry-byebug'
   gem 'rspec'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
