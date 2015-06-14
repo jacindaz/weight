@@ -19,3 +19,7 @@ end
 get '/' do
   haml :index, layout: :layout
 end
+
+get '/example' do 
+  erb :example
+end
