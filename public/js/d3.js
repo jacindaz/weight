@@ -1,5 +1,10 @@
 document.onreadystatechange = function () {
-  d3.selectAll("p")
-    .data([4, 8, 15, 16, 23, 42])
-    .style("font-size", function(d) { return d + "px"; });
+  var data = [4, 8, 15, 16, 23, 42];
+
+  d3.select(".chart")
+  .selectAll("div")
+    .data(data)
+  .enter().append("div")
+    .style("width", function(d) { return d * 10 + "px"; })
+    .text(function(d) { return d; });
 }
