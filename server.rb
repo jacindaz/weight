@@ -27,3 +27,7 @@ end
 get '/svg_example' do
   erb :svg_example
 end
+
+get '/svg_tsv_example' do
+  erb :svg_tsv_example
+end
