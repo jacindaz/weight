@@ -23,3 +23,7 @@ end
 get '/example' do 
   erb :example
 end
+
+get '/svg_example' do
+  erb :svg_example
+end
