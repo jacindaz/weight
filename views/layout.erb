@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/example.css">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+  <script src="/js/d3.js"></script>
+</head>
+
+
+<body>
+
+  <div class="outer-container">
+
+    <h2>Jacinda's First D3.js Project</h2>
+    <br><br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <a href="/svg_example">SVG Example</a>
+      </div>
+      <div class="col-md-3">
+        <a href="/svg_tsv_example">SVG TSV Example</a>
+      </div>
+      <div class="col-md-3">
+        <a href="/svg_vertical_bar_chart">SVG Vertical bar chart</a>
+      </div>
+    </div>
+
+    <hr>
+      <br>
+      <svg class="chart"></svg>
+      <%= yield %>
+
+  </div>
+
+
+</body>
+</html>

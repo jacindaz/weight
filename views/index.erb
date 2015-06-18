@@ -1,2 +1,13 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8">
-</script>
+<h1>Hello World!</h1>
+<div class='chart'>
+	<script>
+	  var data = [4, 8, 15, 16, 23, 42];
+
+	  d3.select(".chart")
+	  .selectAll("div")
+	    .data(data)
+	  .enter().append("div")
+	    .style("width", function(d) { return d * 10 + "px"; })
+	    .text(function(d) { return d; });
+	</script>
+</div>

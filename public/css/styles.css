@@ -1,0 +1,10 @@
+body {
+	background-color: #E4E5F5;
+}
+
+.outer-container {
+	background-color: white; 
+	margin-right: 10%; 
+	margin-left: 10%; 
+	padding: 40px;
+}
