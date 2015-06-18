@@ -17,17 +17,21 @@ configure :development do
 end
 
 get '/' do
-  haml :index, layout: :layout
+  erb :index, layout: :layout
 end
 
 get '/example' do 
-  erb :example
+  erb :example, layout: :layout
 end
 
 get '/svg_example' do
-  erb :svg_example
+  erb :svg_example, layout: :layout
 end
 
 get '/svg_tsv_example' do
-  erb :svg_tsv_example
+  erb :svg_tsv_example, layout: :layout
+end
+
+get '/svg_vertical_bar_chart' do 
+  erb :svg_vertical_bar_chart, layout: :layout
 end
